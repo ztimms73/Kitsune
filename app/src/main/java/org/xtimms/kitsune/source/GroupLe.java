@@ -134,7 +134,8 @@ abstract class GroupLe extends MangaProvider {
 			} catch (ParseException e) {
 				date = Objects.requireNonNull(new SimpleDateFormat("dd.MM.yy", Locale.US).parse("01.01.1970")).getTime();
 			}
-			details.chapters.add(new MangaChapter(
+            assert header.provider != null;
+            details.chapters.add(new MangaChapter(
 					o.text(),
 					i,
 					url(domain, o.attr("href") + "?mtr=1"),

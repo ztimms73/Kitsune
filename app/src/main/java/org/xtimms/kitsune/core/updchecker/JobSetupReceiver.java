@@ -12,7 +12,6 @@ import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.SystemClock;
 import android.preference.PreferenceManager;
-import android.util.Log;
 
 import org.xtimms.kitsune.utils.TextUtils;
 
@@ -34,7 +33,7 @@ public final class JobSetupReceiver extends BroadcastReceiver {
 				setup(context);
 				break;
 			default:
-				Timber.tag("JOB").w("Unknown action: " + intent.getAction());
+				Timber.tag("JOB").w("Unknown action: %s", intent.getAction());
 		}
 	}
 

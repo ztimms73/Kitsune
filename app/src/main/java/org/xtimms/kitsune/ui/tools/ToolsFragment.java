@@ -22,8 +22,6 @@ import org.xtimms.kitsune.core.storage.db.StorageHelper;
 import org.xtimms.kitsune.utils.ResourceUtils;
 import org.xtimms.kitsune.utils.TextUtils;
 
-import java.sql.Time;
-
 @SuppressWarnings("ALL")
 public final class ToolsFragment extends AppBaseFragment implements View.OnClickListener,
 		LoaderManager.LoaderCallbacks<StorageStats>, CacheClearTask.Callback {

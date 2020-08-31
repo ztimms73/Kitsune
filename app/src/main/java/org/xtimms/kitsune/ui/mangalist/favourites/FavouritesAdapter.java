@@ -3,7 +3,6 @@ package org.xtimms.kitsune.ui.mangalist.favourites;
 import android.content.Context;
 import android.content.Intent;
 
-import androidx.annotation.ColorInt;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;

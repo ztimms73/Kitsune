@@ -11,7 +11,6 @@ import android.os.Environment;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 
-import android.os.StrictMode;
 import android.widget.Toast;
 
 import org.json.JSONArray;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
 	<string name="about">Про програму</string>
     <string name="action_favourites">Улюблене</string>
 	<string name="action_favourite">Додати в обране</string>
@@ -297,7 +297,6 @@
     <string name="sync_started">Синхронізація запущена</string>
     <string name="sync_failed">Синхронізація не вдалася</string>
     <string name="sync_finished">Синхронізація завершена</string>
-    <string name="synchronization">Синхронізація</string>
     <string name="logout_confirm">Ви дійсно хочете вийти зі свого облікового запису? Дані в ньому не будуть порушені</string>
     <string name="search_on_another_sources">Шукати в інших джерелах</string>
     <string name="view_mode">Відображення</string>

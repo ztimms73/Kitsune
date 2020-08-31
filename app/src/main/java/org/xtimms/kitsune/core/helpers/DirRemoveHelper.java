@@ -1,10 +1,8 @@
 package org.xtimms.kitsune.core.helpers;
 
 import androidx.annotation.Nullable;
-import android.util.Log;
 
 import java.io.File;
-import java.io.FilenameFilter;
 import java.util.Objects;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -36,7 +34,7 @@ public class DirRemoveHelper implements Runnable {
     @SuppressWarnings("ResultOfMethodCallIgnored")
     private static void removeDir(File dir) {
         if (dir == null || !dir.exists()) {
-            Timber.tag("DIRRM").w("not exists: " + (dir != null ? dir.getPath() : "null"));
+            Timber.tag("DIRRM").w("not exists: %s", (dir != null ? dir.getPath() : "null"));
             return;
         }
         if (dir.isDirectory()) {
@@ -48,7 +46,7 @@ public class DirRemoveHelper implements Runnable {
                 }
             }
         }
-        Timber.tag("DIRRM").d("removed: " + dir.getPath());
+        Timber.tag("DIRRM").d("removed: %s", dir.getPath());
         dir.delete();
     }
 

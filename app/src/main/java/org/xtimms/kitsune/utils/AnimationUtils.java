@@ -4,7 +4,7 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import android.util.Log;
+
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewPropertyAnimator;

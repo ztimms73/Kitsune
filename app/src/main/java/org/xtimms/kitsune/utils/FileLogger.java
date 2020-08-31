@@ -1,7 +1,6 @@
 package org.xtimms.kitsune.utils;
 
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;

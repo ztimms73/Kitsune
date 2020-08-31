@@ -31,7 +31,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.text.NumberFormat;
-import java.util.Objects;
 
 import okhttp3.Request;
 import okhttp3.Response;
@@ -69,7 +68,7 @@ final class ImageSaveTask extends WeakAsyncTask<Context, MangaPage, Integer, Obj
 	@NonNull
 	protected ObjectWrapper<File> doInBackground(MangaPage... mangaPages) {
 		final MangaPage page = mangaPages[0];
-		final File destination = page.url != null && page.url.startsWith("file://") ?
+		final File destination = page.url.startsWith("file://") ?
 				new File(page.url.substring(7)) : PagesCache.getInstance(getObject()).getFileForUrl(page.url);
 		//check if not downloaded
 		if (!destination.exists()) {

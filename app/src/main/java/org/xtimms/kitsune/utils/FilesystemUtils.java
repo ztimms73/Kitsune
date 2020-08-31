@@ -7,12 +7,10 @@ import android.media.MediaScannerConnection;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import android.os.Build;
 import android.os.StatFs;
 import android.text.TextUtils;
 
 import java.io.File;
-import java.io.FileFilter;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;

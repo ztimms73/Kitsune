@@ -21,7 +21,6 @@ import org.xtimms.kitsune.core.models.ListHeader;
 import org.xtimms.kitsune.core.models.MangaFavourite;
 import org.xtimms.kitsune.core.models.MangaHeader;
 import org.xtimms.kitsune.core.models.MangaHistory;
-import org.xtimms.kitsune.core.models.SavedManga;
 import org.xtimms.kitsune.core.models.UserTip;
 import org.xtimms.kitsune.source.MangaProvider;
 import org.xtimms.kitsune.ui.mangalist.favourites.FavouritesActivity;
@@ -268,7 +267,7 @@ public final class ShelfAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 		}
 	}
 
-	class RecentHolder extends MangaHolder {
+	static class RecentHolder extends MangaHolder {
 
 		final TextView textViewStatus;
 		final TextView textViewSubtitle;
@@ -294,7 +293,7 @@ public final class ShelfAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 		}
 	}
 
-	class SavedMangaHolder extends MangaHolder {
+	static class SavedMangaHolder extends MangaHolder {
 
 		final ImageView imageViewThumbnail;
 		final TextView textViewTitle;

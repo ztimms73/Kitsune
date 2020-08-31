@@ -8,10 +8,7 @@ import androidx.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.SparseBooleanArray;
 
-import org.xtimms.kitsune.source.Anibel;
 import org.xtimms.kitsune.source.MangaFox;
-import org.xtimms.kitsune.source.MangaLib;
-import org.xtimms.kitsune.source.MangaTown;
 import org.xtimms.kitsune.source.Remanga;
 import org.xtimms.kitsune.utils.CollectionsUtils;
 import org.xtimms.kitsune.core.models.ProviderHeader;

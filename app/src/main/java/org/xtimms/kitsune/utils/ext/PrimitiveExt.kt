@@ -24,11 +24,3 @@ fun Number.format(decimals: Int = 0, decPoint: Char = '.', thousandsSep: Char? =
     }
 }
 
-fun Float.toIntUp(): Int {
-    val intValue = toInt()
-    return if (this == intValue.toFloat()) {
-        intValue
-    } else {
-        intValue + 1
-    }
-}

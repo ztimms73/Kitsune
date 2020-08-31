@@ -5,7 +5,6 @@ import android.app.Application;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
-import android.os.StrictMode;
 import android.preference.PreferenceManager;
 import androidx.annotation.NonNull;
 
@@ -63,23 +62,23 @@ public final class KitsuneApp extends Application {
 		NetworkUtils.init(this, settings.isUseTor());
 		ResourceUtils.setLocale(getResources(), settings.getAppLocale());
 		@SuppressWarnings("deprecation") SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-		//noinspection deprecation,deprecation
+		// noinspection deprecation
 		if (!prefs.getBoolean(PreferenceManager.KEY_HAS_SET_DEFAULT_VALUES, false)) {
-			//noinspection deprecation,deprecation
+			// noinspection deprecation
 			PreferenceManager.setDefaultValues(this, R.xml.pref_general, true);
-			//noinspection deprecation,deprecation
+			// noinspection deprecation
 			PreferenceManager.setDefaultValues(this, R.xml.pref_network, true);
-			//noinspection deprecation,deprecation
+			// noinspection deprecation
 			PreferenceManager.setDefaultValues(this, R.xml.pref_reader, true);
-			//noinspection deprecation,deprecation
+			// noinspection deprecation
 			PreferenceManager.setDefaultValues(this, R.xml.pref_backup, true);
-			//noinspection deprecation,deprecation
+			// noinspection deprecation
 			PreferenceManager.setDefaultValues(this, R.xml.pref_sync, true);
-			//noinspection deprecation,deprecation
+			// noinspection deprecation
 			PreferenceManager.setDefaultValues(this, R.xml.pref_advanced, true);
 			//TODO other
 			JobSetupReceiver.setup(this);
-			//noinspection deprecation,deprecation
+			// noinspection deprecation
 			prefs.edit().putBoolean(PreferenceManager.KEY_HAS_SET_DEFAULT_VALUES, true).apply();
 		}
 	}

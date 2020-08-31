@@ -11,7 +11,7 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.OrientationHelper;
 import androidx.recyclerview.widget.RecyclerView;
-import android.util.Log;
+
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
@@ -126,7 +126,7 @@ public abstract class LayoutUtils {
 	}
 
 	public static void setSelectionFromTop(RecyclerView recyclerView, int position) {
-		Timber.tag("Scroll").d("#" + position);
+		Timber.tag("Scroll").d("#%s", position);
 		final RecyclerView.LayoutManager layoutManager = recyclerView.getLayoutManager();
 		if (layoutManager != null) {
 			if (layoutManager instanceof LinearLayoutManager) {

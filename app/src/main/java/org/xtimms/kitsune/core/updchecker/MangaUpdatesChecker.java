@@ -31,7 +31,8 @@ public final class MangaUpdatesChecker {
 	@WorkerThread
 	public int fetchChaptersCount(MangaHeader manga) {
 		try {
-			final MangaProvider provider = MangaProvider.get(mContext, manga.provider);
+            assert manga.provider != null;
+            final MangaProvider provider = MangaProvider.get(mContext, manga.provider);
 			final MangaDetails details = provider.getDetails(manga);
 			return details.chapters.size();
 		} catch (Exception e) {

@@ -420,7 +420,6 @@ public final class OemBadgeHelper {
 		}
 	}
 
-	@SuppressWarnings("DuplicateExpressions")
 	private class XiaomiHomeBadger implements Badger {
 
 		private static final String INTENT_ACTION = "android.intent.action.APPLICATION_MESSAGE_UPDATE";

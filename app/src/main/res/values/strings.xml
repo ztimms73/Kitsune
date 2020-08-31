@@ -281,7 +281,6 @@
     <string name="sync_started">Synchronization started</string>
     <string name="sync_failed">Synchronization failed</string>
     <string name="sync_finished">Synchronization finished</string>
-    <string name="synchronization">Synchronization</string>
     <string name="logout_confirm">Do you really want to logout from your account? No local data will be changed</string>
     <string name="search_on_another_sources">Search on another sources</string>
     <string name="view_mode">View mode</string>
@@ -294,5 +293,4 @@
     <string name="contact_the_developer">Contact the developer</string>
     <string name="faq">FAQ</string>
     <string name="dots" translatable="false">…</string>
-    <string name="scroll_by_click">Scroll by click on sides</string>
 </resources>

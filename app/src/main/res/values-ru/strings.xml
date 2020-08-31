@@ -294,8 +294,7 @@
 	<string name="sync_started">Синхронизация запущена</string>
 	<string name="sync_failed">Синхронизация не удалась</string>
 	<string name="sync_finished">Синхронизация завершена</string>
-	<string name="synchronization">Синхронизация</string>
-	<string name="logout_confirm">Вы действительно хотите выйти из аккаунта? Данные на устройстве не будут затронуты</string>
+    <string name="logout_confirm">Вы действительно хотите выйти из аккаунта? Данные на устройстве не будут затронуты</string>
     <string name="view_mode">Отображение</string>
 	<string name="view_mode_list">Список</string>
     <string name="view_mode_grid_small">Мелкая сетка</string>

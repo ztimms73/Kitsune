@@ -1,22 +1,17 @@
 package org.xtimms.kitsune.utils.network;
 
-import android.util.Log;
-
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
-import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import javax.net.ssl.KeyManager;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocket;
 import javax.net.ssl.SSLSocketFactory;
-import javax.net.ssl.TrustManager;
 
 import timber.log.Timber;
 
@@ -29,7 +24,7 @@ public class SSLSocketFactoryExtended extends SSLSocketFactory
 
     public SSLSocketFactoryExtended() throws NoSuchAlgorithmException, KeyManagementException
     {
-        initSSLSocketFactoryEx(null,null,null);
+        initSSLSocketFactoryEx();
     }
 
     public String[] getDefaultCipherSuites()
@@ -97,11 +92,11 @@ public class SSLSocketFactoryExtended extends SSLSocketFactory
         return ss;
     }
 
-    private void initSSLSocketFactoryEx(KeyManager[] km, TrustManager[] tm, SecureRandom random)
+    private void initSSLSocketFactoryEx()
             throws NoSuchAlgorithmException, KeyManagementException
     {
         mSSLContext = SSLContext.getInstance("TLS");
-        mSSLContext.init(km, tm, random);
+        mSSLContext.init(null, null, null);
 
         mProtocols = GetProtocolList();
         mCiphers = GetCipherList();
@@ -130,7 +125,7 @@ public class SSLSocketFactoryExtended extends SSLSocketFactory
             if(socket != null)
                 try {
                     socket.close();
-                } catch (IOException e) {
+                } catch (IOException ignored) {
                 }
         }
 

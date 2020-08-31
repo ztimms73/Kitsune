@@ -13,7 +13,6 @@ import androidx.annotation.ColorRes;
 import androidx.annotation.IdRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.annotation.StringRes;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -31,7 +30,6 @@ public abstract class AppBaseActivity extends AppCompatActivity {
 
     private static final int REQUEST_PERMISSION = 112;
 
-    private boolean mActionBarVisible = false;
     private boolean mHomeAsUpEnabled = false;
     private int mTheme = 0;
     @SuppressWarnings("MismatchedQueryAndUpdateOfCollection")
@@ -76,7 +74,7 @@ public abstract class AppBaseActivity extends AppCompatActivity {
     @Override
     public void setSupportActionBar(@Nullable Toolbar toolbar) {
         super.setSupportActionBar(toolbar);
-        mActionBarVisible = toolbar != null;
+        boolean mActionBarVisible = toolbar != null;
     }
 
     public void setSupportActionBar(@IdRes int toolbarId) {

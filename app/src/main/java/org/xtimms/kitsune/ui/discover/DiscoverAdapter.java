@@ -126,7 +126,7 @@ public final class DiscoverAdapter extends RecyclerView.Adapter<RecyclerView.Vie
 		}
 	}
 
-	class DetailsProviderHolder extends ProviderHolder {
+	static class DetailsProviderHolder extends ProviderHolder {
 
 		final ListItemView list;
 

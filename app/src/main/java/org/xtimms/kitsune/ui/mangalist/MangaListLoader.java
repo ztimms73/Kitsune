@@ -1,8 +1,8 @@
 package org.xtimms.kitsune.ui.mangalist;
 
+import android.annotation.SuppressLint;
 import android.content.AsyncTaskLoader;
 import android.content.Context;
-import android.util.Log;
 
 import org.xtimms.kitsune.core.ListWrapper;
 import org.xtimms.kitsune.core.models.MangaHeader;
@@ -23,7 +23,8 @@ public final class MangaListLoader extends AsyncTaskLoader<ListWrapper<MangaHead
 		mArguments = arguments;
 	}
 
-	@SuppressWarnings("deprecation")
+	@SuppressLint("DefaultLocale")
+    @SuppressWarnings("deprecation")
 	@Override
 	public ListWrapper<MangaHeader> loadInBackground() {
 		long time = System.currentTimeMillis();

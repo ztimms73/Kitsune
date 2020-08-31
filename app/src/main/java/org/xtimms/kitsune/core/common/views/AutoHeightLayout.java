@@ -5,8 +5,6 @@ import android.util.AttributeSet;
 
 public class AutoHeightLayout extends FrameCheckLayout {
 
-    private double mAspectRatio = 18f / 13f;
-
     public AutoHeightLayout(Context context) {
         super(context);
     }
@@ -22,6 +20,7 @@ public class AutoHeightLayout extends FrameCheckLayout {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         int originalWidth = MeasureSpec.getSize(widthMeasureSpec);
+        double mAspectRatio = 18f / 13f;
         int calculatedHeight = (int) (originalWidth * mAspectRatio);
         super.onMeasure(
                 MeasureSpec.makeMeasureSpec(originalWidth, MeasureSpec.EXACTLY),

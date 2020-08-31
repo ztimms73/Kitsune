@@ -19,10 +19,4 @@
     <color name="selectorColorDark">#80448AFF</color>
     <color name="selectorColorLight">#612979FF</color>
 
-    <color name="colorPrimaryLightDefault">#3387E2</color>
-    <color name="colorAccentLightDefault">#3387E2</color>
-
-    <color name="colorPrimaryDarkDefault">#37474F</color>
-    <color name="colorAccentDarkDefault">#2196F3</color>
-
 </resources>

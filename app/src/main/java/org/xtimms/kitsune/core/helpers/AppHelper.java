@@ -6,7 +6,6 @@ import android.net.Uri;
 import android.os.Build;
 import android.text.format.DateUtils;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.io.File;
@@ -15,7 +14,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 import java.util.Objects;
-import java.util.regex.Pattern;
 
 public class AppHelper {
 

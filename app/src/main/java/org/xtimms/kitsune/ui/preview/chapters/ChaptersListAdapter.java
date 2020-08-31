@@ -30,7 +30,7 @@ public final class ChaptersListAdapter extends RecyclerView.Adapter<ChaptersList
 	private boolean mReversed = false;
 	private final Drawable[] mIcons;
 
-	private int mLastNumber;
+	private final int mLastNumber;
 	private final int[] mColors;
 
 	public ChaptersListAdapter(Context context, ArrayList<MangaChapter> dataset, OnChapterClickListener listener) {

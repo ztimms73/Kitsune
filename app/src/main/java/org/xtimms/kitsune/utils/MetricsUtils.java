@@ -1,7 +1,7 @@
 package org.xtimms.kitsune.utils;
 
 import android.content.res.Resources;
-import androidx.annotation.DimenRes;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.UiThread;
 import android.view.View;
@@ -18,18 +18,18 @@ public abstract class MetricsUtils {
 	}
 
 	private static Size getPreferredCellSize(Resources resources) {
-		int columns = getPreferredColumnsCount(resources, R.dimen.column_width_medium);
+		int columns = getPreferredColumnsCount(resources);
 		int width = (int) Math.floor(resources.getDisplayMetrics().widthPixels / (float) columns);
 		return new Size(width, (int) (width * DEF_ASPECT_RATIO));
 	}
 
 	public static int getPreferredColumnsCountMedium(Resources resources) {
-		return getPreferredColumnsCount(resources, R.dimen.column_width_medium);
+		return getPreferredColumnsCount(resources);
 	}
 
-	private static int getPreferredColumnsCount(Resources resources, @DimenRes int columnWidthDimen) {
+	private static int getPreferredColumnsCount(Resources resources) {
 		int totalWidth = resources.getDisplayMetrics().widthPixels;
-		int columnWidth = resources.getDimensionPixelSize(columnWidthDimen);
+		int columnWidth = resources.getDimensionPixelSize(R.dimen.column_width_medium);
 		return Math.max(1, Math.round(totalWidth / (float) columnWidth));
 	}
 

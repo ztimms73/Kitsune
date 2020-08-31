@@ -7,7 +7,7 @@ import androidx.appcompat.widget.AppCompatImageView;
 
 public class AspectRatioImageView extends AppCompatImageView {
 
-    protected double mAspectRatio = 18f / 13f;
+    protected final double mAspectRatio = 18f / 13f;
 
     public AspectRatioImageView(Context context) {
         super(context);

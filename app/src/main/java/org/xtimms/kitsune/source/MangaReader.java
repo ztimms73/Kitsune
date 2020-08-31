@@ -115,6 +115,7 @@ public final class MangaReader extends MangaProvider {
         final int len = ch.size();
         for (int i = 0; i < len; i++) {
             Element o = ch.get(len - i - 1);
+            assert header.provider != null;
             details.chapters.add(0, new MangaChapter(
                     o.text() + o.parent().ownText(),
                     i,

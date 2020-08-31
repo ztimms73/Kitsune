@@ -9,10 +9,6 @@ import androidx.viewpager.widget.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
-import org.xtimms.kitsune.core.common.transformers.DepthPageTransformer;
-import org.xtimms.kitsune.core.common.transformers.TabletPageTransformer;
-import org.xtimms.kitsune.core.common.transformers.ZoomInPageTransformer;
-import org.xtimms.kitsune.core.common.transformers.ZoomOutPageTransformer;
 import org.xtimms.kitsune.ui.reader.OnOverScrollListener;
 
 public class OverScrollPager extends ViewPager {

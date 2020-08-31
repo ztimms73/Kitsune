@@ -64,7 +64,8 @@
             android:drawableEnd="@drawable/ic_star"
             android:drawableTint="?android:attr/textColorSecondary"
             android:drawablePadding="4dp"
-            tools:text="4.3" />
+            tools:text="4.3"
+            tools:targetApi="m" />
 
         <TextView
             android:id="@+id/status"

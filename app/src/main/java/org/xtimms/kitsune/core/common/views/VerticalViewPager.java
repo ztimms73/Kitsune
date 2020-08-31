@@ -1,5 +1,6 @@
 package org.xtimms.kitsune.core.common.views;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
@@ -67,6 +68,7 @@ public class VerticalViewPager extends OverScrollPager {
         return intercept || isVertical;
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     public boolean onTouchEvent(MotionEvent ev) {
         return super.onTouchEvent(swapTouchEvent(ev));

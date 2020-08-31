@@ -14,7 +14,6 @@
 		style="@style/TextAppearance.Medium.Body2.Hint"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:layout_centerHorizontal="true"
 		android:layout_margin="16dp"
 		android:gravity="center"
 		android:textSize="48sp"

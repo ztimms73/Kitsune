@@ -29,9 +29,6 @@ import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 import javax.net.ssl.HttpsURLConnection;
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.SSLEngine;
-import javax.net.ssl.SSLSocketFactory;
 
 import info.guardianproject.netcipher.NetCipher;
 import info.guardianproject.netcipher.client.StrongOkHttpClientBuilder;
