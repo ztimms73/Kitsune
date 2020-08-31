@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="4dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/feel_free_to_contact_me"
+            android:textColor="?colorAccent"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?colorLine"/>
+
+        <LinearLayout
+            android:id="@+id/ll_card_about_2_google_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="16dp"
+                app:tint="?android:attr/textColorSecondary"
+                app:tintMode="src_in"
+                android:src="@drawable/ic_shop_24dp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="16dp"
+                android:text="@string/about_google_play"
+                android:textStyle="italic"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_card_about_2_telegram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="16dp"
+                app:tint="?android:attr/textColorSecondary"
+                app:tintMode="src_in"
+                android:src="@drawable/ic_telegram_black_24dp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="16dp"
+                android:text="@string/about_telegram"
+                android:textStyle="italic"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_card_about_2_4pda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="16dp"
+                app:tint="?android:attr/textColorSecondary"
+                app:tintMode="src_in"
+                android:src="@drawable/ic_forum_black_24dp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="16dp"
+                android:text="@string/about_4pda"
+                android:textStyle="italic"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_card_about_2_github"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="16dp"
+                app:tint="?android:attr/textColorSecondary"
+                app:tintMode="src_in"
+                android:src="@drawable/ic_code_black_24dp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="16dp"
+                android:text="@string/about_github"
+                android:textStyle="italic"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

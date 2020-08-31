@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<Preference
+		android:title="@string/backup"
+		android:key="backup"
+		android:summary="@string/backup_summary"/>
+	<Preference
+		android:title="@string/restore"
+		android:key="restore"
+		android:summary="@string/restore_summary"/>
+
+</PreferenceScreen>

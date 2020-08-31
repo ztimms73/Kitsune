@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.xtimms.kitsune">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.QUICKBOOT_POWERON" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- OEM Badges -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_APP_BADGE" />
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name=".KitsuneApp"
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:hasFragileUserData="true"
+        android:icon="@mipmap/ic_launcher"
+        android:installLocation="internalOnly"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true"
+        tools:targetApi="m">
+        <activity
+            android:name=".ui.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/SplashScreenBackground"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <activity
+            android:name=".ui.preview.PreviewActivity"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="org.xtimms.kitsune.ACTION_PREVIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.AboutActivity"
+            android:label="@string/about" />
+        <activity
+            android:name=".ui.mangalist.MangaListActivity"
+            android:configChanges="screenSize|orientation" />
+        <activity
+            android:name=".ui.mangalist.history.HistoryActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/action_history" />
+        <activity
+            android:name=".ui.mangalist.favourites.FavouritesActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/action_favourites" />
+        <activity
+            android:name=".ui.mangalist.favourites.CategoriesActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/favourites_categories" />
+        <activity
+            android:name=".core.storage.SavedMangaActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/saved_manga" />
+        <activity
+            android:name=".ui.mangalist.updates.MangaUpdatesActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/manga_updates" />
+        <activity
+            android:name=".ui.discover.bookmarks.BookmarksListActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/bookmarks" />
+        <activity
+            android:name=".ui.filepicker.FilePickerActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/select_file" />
+        <activity
+            android:name=".ui.search.SearchActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/action_search">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".ui.reader.ReaderActivity"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="org.xtimms.kitsune.ACTION_READING_CONTINUE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.tools.settings.SettingsHeadersActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/settings" />
+        <activity
+            android:name=".ui.tools.settings.SettingsActivity"
+            android:label="@string/settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MANAGE_NETWORK_USAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.recommendations.RecommendationsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/recommendations" />
+        <activity
+            android:name=".ui.tools.settings.providers.ProvidersSettingsActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/manga_catalogues" />
+        <activity
+            android:name=".ui.tools.settings.providers.ProviderPreferencesActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/manga_catalogues" />
+        <activity
+            android:name=".ui.help.HelpActivity"
+            android:configChanges="orientation|screenSize" />
+
+        <provider
+            android:name=".ui.search.SearchSuggestionsProvider"
+            android:authorities="${applicationId}.SEARCH_SUGGEST"
+            android:exported="false" />
+
+        <service android:name=".core.updchecker.UpdatesCheckService" />
+
+        <service android:name=".core.storage.LocalRemoveService" />
+
+        <service
+            android:name=".core.updchecker.UpdatesCheckJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service android:name=".ui.recommendations.RecommendationsUpdateService" />
+        <service android:name=".core.storage.SaveService" />
+        <service android:name=".core.services.SyncService" />
+
+        <receiver android:name=".core.updchecker.JobSetupReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="com.htc.intent.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name=".core.SharedFileProvider"
+            android:authorities="${applicationId}.files"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths_shared" />
+        </provider>
+    </application>
+
+</manifest>

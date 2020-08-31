@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:foreground="?selectableItemBackground"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <org.xtimms.kitsune.core.common.views.AspectRatioImageView
+            android:id="@+id/imageViewThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_margin="8dp"
+            tools:src="@tools:sample/backgrounds/scenic"/>
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            tools:text="@tools:sample/lorem/random"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

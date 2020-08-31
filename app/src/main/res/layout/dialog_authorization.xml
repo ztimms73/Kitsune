@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:padding="8dp">
+
+	<TextView
+		android:text="@string/authorization"
+		android:id="@+id/textView_title"
+		android:layout_width="match_parent"
+		android:paddingLeft="16dp"
+		android:paddingRight="16dp"
+		android:gravity="center_vertical"
+		android:singleLine="true"
+		android:lines="1"
+		android:minHeight="46dp"
+		android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+		android:textColor="?android:textColorTertiary"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true" />
+
+	<com.google.android.material.textfield.TextInputLayout
+		android:id="@+id/inputLayout_login"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="12dp"
+		android:paddingRight="12dp"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentStart="true"
+		android:layout_below="@id/textView_title">
+
+		<com.google.android.material.textfield.TextInputEditText
+			android:id="@+id/edit_login"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="@string/login"
+			android:inputType="textEmailAddress"
+			android:maxLines="1"
+			android:singleLine="true" />
+
+	</com.google.android.material.textfield.TextInputLayout>
+
+	<com.google.android.material.textfield.TextInputLayout
+		android:id="@+id/inputLayout_password"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:layout_below="@id/inputLayout_login"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentEnd="true"
+		android:layout_marginStart="0dp"
+		android:paddingLeft="12dp"
+		android:paddingRight="12dp"
+		app:errorEnabled="true"
+		app:passwordToggleEnabled="true">
+
+		<com.google.android.material.textfield.TextInputEditText
+			android:id="@+id/edit_password"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="@string/password"
+			android:imeActionId="6"
+			android:imeActionLabel="@string/sign_in"
+			android:imeOptions="actionUnspecified"
+			android:inputType="textPassword"
+			android:maxLines="1"
+			android:singleLine="true" />
+
+	</com.google.android.material.textfield.TextInputLayout>
+
+	<Button
+		android:id="@+id/button_login"
+		style="@style/Widget.AppCompat.Button.Colored"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentEnd="true"
+		android:layout_marginEnd="12dp"
+		android:layout_below="@id/inputLayout_password"
+		android:text="@string/sign_in" />
+
+	<Button
+		android:id="@+id/button_cancel"
+		style="@style/Widget.AppCompat.Button.Borderless.Colored"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/inputLayout_password"
+		android:layout_toLeftOf="@id/button_login"
+		android:layout_toStartOf="@id/button_login"
+		android:text="@android:string/cancel"
+		tools:ignore="RtlHardcoded" />
+
+	<ProgressBar
+		android:id="@+id/progressBar"
+		style="@style/Widget.AppCompat.ProgressBar"
+		android:layout_width="@dimen/progressbar_large"
+		android:layout_height="@dimen/progressbar_large"
+		android:layout_centerInParent="true"
+		android:indeterminate="true"
+		android:visibility="gone" />
+
+
+</RelativeLayout>

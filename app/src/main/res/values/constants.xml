@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="center_gravity_behavior" translatable="false">org.xtimms.kitsune.core.common.views.behavior.CenterGravityBehavior</string>
+	<string name="scroll_aware_behavior" translatable="false">org.xtimms.kitsune.core.common.views.behavior.ScrollAwareFABBehavior</string>
+</resources>

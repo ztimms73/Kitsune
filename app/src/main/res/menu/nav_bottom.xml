@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<group android:checkableBehavior="single">
+		<item android:id="@+id/section_shelf"
+			android:title="@string/shelf"
+			android:icon="@drawable/ic_library_shelves_24dp" />
+
+		<item android:id="@+id/section_discover"
+			android:title="@string/discover"
+			android:icon="@drawable/ic_glasses_24dp" />
+
+		<item android:id="@+id/action_tools"
+			android:title="@string/tools"
+			android:icon="@drawable/ic_tools_black" />
+	</group>
+
+	<group android:id="@+id/group" android:checkableBehavior="none" >
+		<item
+			android:id="@+id/nav_action_settings"
+			android:icon="@drawable/ic_nav_settings"
+			android:title="@string/action_settings"/>
+		<item
+			android:id="@+id/nav_action_about"
+			android:icon="@drawable/ic_info_24dp"
+			android:title="@string/about"/>
+
+	</group>
+
+</menu>

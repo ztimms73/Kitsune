@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="colorTranslucent">#d2ffffff</item>
+        <item name="colorGray">#9e9e9e</item>
+        <item name="android:windowBackground">@color/main_background</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@android:color/black</item>
+        <item name="colorLine">#CCCCCC</item>
+        <item name="colorCircle">#AAAAAA</item>
+        <item name="colorSave">#4B4B4B</item>
+        <item name="colorCard">#FFFFFF</item>
+        <item name="colorPrimaryDark">#003c83</item>
+        <item name="alphaBackground">#CCFFFFFF</item>
+        <item name="autoCompleteTextViewStyle">@style/Cursor</item>
+        <item name="selectable_library_drawable">@drawable/library_item_selector_light</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+    <style name="AppThemeDark" parent="Theme.AppCompat.NoActionBar">
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="colorTranslucent">#d2414141</item>
+        <item name="colorGray">#bdbdbd</item>
+        <item name="colorLine">#666666</item>
+        <item name="colorCircle">#666666</item>
+        <item name="colorSave">#C0C0C0</item>
+        <item name="colorCard">#ff303030</item>
+        <item name="alphaBackground">#CC000000</item>
+        <item name="autoCompleteTextViewStyle">@style/Cursor</item>
+        <item name="selectable_library_drawable">@drawable/library_item_selector_dark</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat</item>
+    </style>
+
+    <style name="AppThemeBlack" parent="Theme.AppCompat.NoActionBar">
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="colorPrimary">@android:color/black</item>
+        <item name="colorTranslucent">#d2000000</item>
+        <item name="colorGray">#757575</item>
+        <item name="colorLine">#666666</item>
+        <item name="colorCircle">#666666</item>
+        <item name="colorSave">#C0C0C0</item>
+        <item name="colorCard">#000000</item>
+        <item name="alphaBackground">#CC000000</item>
+        <item name="autoCompleteTextViewStyle">@style/Cursor</item>
+        <item name="selectable_library_drawable">@drawable/library_item_selector_amoled</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat</item>
+    </style>
+
+    <style name="AppTheme.Default">
+        <item name="colorPrimaryLight">#5592e6</item>
+        <item name="colorPrimary">#0065b3</item>
+        <item name="colorPrimaryDark">#003c83</item>
+        <item name="colorAccent">#0065b3</item>
+    </style>
+
+    <style name="AppTheme.PurpleCorallite">
+        <item name="colorPrimaryLight">#8677c1</item>
+        <item name="colorPrimary">#574b90</item>
+        <item name="colorPrimaryDark">#292362</item>
+        <item name="colorAccent">#3d558a</item>
+    </style>
+
+    <style name="AppTheme.Ambiance">
+        <item name="colorPrimaryLight">#636363</item>
+        <item name="colorPrimary">#424242</item>
+        <item name="colorPrimaryDark">#212121</item>
+        <item name="colorAccent">#ff5722</item>
+    </style>
+
+    <style name="AppTheme.Nephritis">
+        <item name="colorPrimaryLight">#7282DD</item>
+        <item name="colorPrimary">#5c6bc0</item>
+        <item name="colorPrimaryDark">#26418f</item>
+        <item name="colorAccent">#f57f17</item>
+    </style>
+
+    <style name="AppTheme.RoyalBlue">
+        <item name="colorPrimaryLight">#237CCA</item>
+        <item name="colorPrimary">#01579b</item>
+        <item name="colorPrimaryDark">#002f6c</item>
+        <item name="colorAccent">#e53935</item>
+    </style>
+
+    <style name="AppTheme.SizzlingRed">
+        <item name="colorPrimaryLight">#ff7383</item>
+        <item name="colorPrimary">#f53b57</item>
+        <item name="colorPrimaryDark">#bb002e</item>
+        <item name="colorAccent">#3bb4f5</item>
+    </style>
+
+    <style name="AppTheme.JacksonsPurple">
+        <item name="colorPrimaryLight">#6e6ba9</item>
+        <item name="colorPrimary">#40407a</item>
+        <item name="colorPrimaryDark">#101a4d</item>
+        <item name="colorAccent">#8a4040</item>
+    </style>
+
+    <style name="AppTheme.Keppel">
+        <item name="colorPrimaryLight">#8ae3d0</item>
+        <item name="colorPrimary">#58b19f</item>
+        <item name="colorPrimaryDark">#228171</item>
+        <item name="colorAccent">#be6e7e</item>
+    </style>
+
+    <style name="AppTheme.PixelatedGrass">
+        <item name="colorPrimaryLight">#99d066</item>
+        <item name="colorPrimary">#689f38</item>
+        <item name="colorPrimaryDark">#387002</item>
+        <item name="colorAccent">#558b2f</item>
+    </style>
+
+    <style name="AppTheme.Teal">
+        <item name="colorPrimaryLight">#4DB6AC</item>
+        <item name="colorPrimary">#009688</item>
+        <item name="colorPrimaryDark">#00796B</item>
+        <item name="colorAccent">#ec407a</item>
+    </style>
+
+    <style name="AppTheme.Watermelon">
+        <item name="colorPrimaryLight">#ff7d84</item>
+        <item name="colorPrimary">#FF4757</item>
+        <item name="colorPrimaryDark">#c5002e</item>
+        <item name="colorAccent">#31b064</item>
+    </style>
+
+    <style name="AppTheme.ProtossPylon">
+        <item name="colorPrimaryLight">#63ccff</item>
+        <item name="colorPrimary">#039BE5</item>
+        <item name="colorPrimaryDark">#006db3</item>
+        <item name="colorAccent">#0277bd</item>
+    </style>
+
+    <style name="AppTheme.Bluebell">
+        <item name="colorPrimaryLight">#8f9bff</item>
+        <item name="colorPrimary">#536dfe</item>
+        <item name="colorPrimaryDark">#0043ca</item>
+        <item name="colorAccent">#3f51b5</item>
+    </style>
+
+    <style name="AppTheme.VeryBerry">
+        <item name="colorPrimaryLight">#ea679f</item>
+        <item name="colorPrimary">#B53471</item>
+        <item name="colorPrimaryDark">#810046</item>
+        <item name="colorAccent">#B53471</item>
+    </style>
+
+    <style name="AppTheme.JalapenoRed">
+        <item name="colorPrimaryLight">#ff7266</item>
+        <item name="colorPrimary">#ed3b3b</item>
+        <item name="colorPrimaryDark">#b30013</item>
+        <item name="colorAccent">#d23f31</item>
+    </style>
+
+    <style name="AppTheme.Dupain">
+        <item name="colorPrimaryLight">#92d4ef</item>
+        <item name="colorPrimary">#60a3bc</item>
+        <item name="colorPrimaryDark">#2c748c</item>
+        <item name="colorAccent">#bc795f</item>
+    </style>
+
+    <style name="AppTheme.Photon">
+        <item name="colorPrimaryLight">#ff9d3f</item>
+        <item name="colorPrimary">#ef6c00</item>
+        <item name="colorPrimaryDark">#b53d00</item>
+        <item name="colorAccent">#e65100</item>
+    </style>
+
+    <style name="AppTheme.Tachiyomi">
+        <item name="colorPrimaryLight">#6F8BB1</item>
+        <item name="colorPrimary">#54759E</item>
+        <item name="colorPrimaryDark">#435E7E</item>
+        <item name="colorAccent">#2979FF</item>
+    </style>
+
+    <style name="AppTheme.VK">
+        <item name="colorPrimaryLight">#7baff5</item>
+        <item name="colorPrimary">#4680c2</item>
+        <item name="colorPrimaryDark">#005491</item>
+        <item name="colorAccent">#4680c2</item>
+    </style>
+
+    <style name="AppThemeDark.Dark">
+        <item name="colorPrimaryLight">#535353</item>
+    </style>
+
+    <style name="AppThemeBlack.AMOLED">
+        <item name="colorPrimaryLight">#535353</item>
+    </style>
+
+    <style name="AppThemeDark.Miku">
+        <item name="colorPrimaryLight">#484848</item>
+        <item name="colorPrimary">#212121</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#00acc1</item>
+        <item name="android:windowBackground">@color/blue_grey_900</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="behavior_peekHeight">@dimen/bottomsheet_peek_height</item>
+    </style>
+
+    <style name="AppDialogLight" parent="Theme.Design.Light.BottomSheetDialog">
+
+    </style>
+
+    <style name="AppDialogDark" parent="Theme.Design.BottomSheetDialog">
+
+    </style>
+
+    <!--===============-->
+    <!--Text Appearance-->
+    <!--===============-->
+    <style name="TextAppearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Regular">
+        <item name="android:fontFamily">sans-serif-regular</item>
+    </style>
+
+    <style name="TextAppearance.Regular.Body1">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.Regular.Body1.Light">
+        <item name="android:textColor">@color/textColorPrimaryDark</item>
+    </style>
+
+    <style name="TextAppearance.Regular.Caption">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextAppearance.Regular.Caption.Hint">
+        <item name="android:textColor">?android:attr/textColorHint</item>
+    </style>
+
+    <style name="TextAppearance.Medium">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextAppearance.Medium.Body2">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.Medium.Body2.Hint">
+        <item name="android:textColor">?android:attr/textColorHint</item>
+    </style>
+
+    <style name="SplashScreenBackground" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <style name="Cursor" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
+    </style>
+
+</resources>

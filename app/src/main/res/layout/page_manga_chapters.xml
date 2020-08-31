@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:tag="@string/chapters"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/recyclerView_chapters"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:clipToPadding="false"
+		android:splitMotionEvents="false"
+		android:scrollbars="none" />
+
+	<TextView
+		android:id="@+id/textView_chapters_holder"
+		android:text="@string/no_chapters_found"
+		android:gravity="center_horizontal"
+		android:layout_gravity="center_vertical"
+		android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+		android:visibility="gone"
+		tools:visibility="visible"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

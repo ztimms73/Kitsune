@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	<item
+		android:id="@+id/action_share"
+		android:icon="@drawable/ic_share_white"
+		android:title="@string/share"
+		app:showAsAction="ifRoom" />
+	<group android:id="@+id/group_details">
+		<item
+			android:id="@+id/action_shortcut"
+			android:title="@string/add_to_homescreen"
+			app:showAsAction="never" />
+		<item
+			android:id="@+id/action_open_ext"
+			android:title="@string/open_in_"
+			app:showAsAction="never">
+			<menu />
+		</item>
+	</group>
+</menu>

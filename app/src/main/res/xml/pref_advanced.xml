@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/help">
+        <Preference
+            android:key="bugreport"
+            android:summary="@string/bug_report_summ"
+            android:title="@string/bug_report" />
+    </PreferenceCategory>
+</PreferenceScreen>

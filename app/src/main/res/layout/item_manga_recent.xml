@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="142dp">
+
+        <ImageView
+            android:id="@+id/imageViewThumbnail"
+            android:layout_width="98dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/image_album"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="98dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewThumbnail"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageViewThumbnail"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Sewayaki Kitsune no Senko-san" />
+
+            <TextView
+                android:id="@+id/textView_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:lines="1"
+                android:singleLine="true"
+                app:layout_constraintStart_toEndOf="@+id/imageViewThumbnail"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+                tools:text="Заботливая 800-летняя жена!" />
+
+            <TextView
+                android:id="@+id/textView_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"
+                android:lines="1"
+                android:singleLine="true"
+                app:layout_constraintStart_toEndOf="@+id/imageViewThumbnail"
+                app:layout_constraintTop_toBottomOf="@+id/textView_subtitle"
+                tools:text="2 часа назад" />
+
+        </LinearLayout>
+
+
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="98dp"
+            android:background="?attr/colorLine"
+            app:layout_constraintBottom_toTopOf="@+id/button_continue"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button_continue"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:layout_alignParentEnd="true"
+            android:text="@string/_continue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

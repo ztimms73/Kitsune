@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_listmode"
+        android:orderInCategory="100"
+        android:title="@string/view_mode"
+        app:showAsAction="never" >
+
+        <menu>
+            <group android:checkableBehavior="single" >
+                <item
+                    android:id="@+id/listmode_list"
+                    android:title="@string/view_mode_list" />
+
+                <item
+                    android:id="@+id/listmode_grid_small"
+                    android:title="@string/view_mode_grid_small" />
+
+                <item
+                    android:id="@+id/listmode_grid_medium"
+                    android:title="@string/view_mode_grid_medium" />
+
+                <item
+                    android:id="@+id/listmode_grid_large"
+                    android:title="@string/view_mode_grid_large" />
+            </group>
+        </menu>
+
+    </item>
+
+    <item android:id="@+id/action_clear"
+        android:orderInCategory="101"
+        android:title="@string/clear_history"
+        app:showAsAction="never" />
+</menu>

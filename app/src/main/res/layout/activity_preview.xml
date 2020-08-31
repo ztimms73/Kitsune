@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:background="?colorCard"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/appbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			app:layout_scrollFlags="enterAlways"
+			tools:navigationIcon="@drawable/ic_arrow_back_white_24dp"
+			tools:subtitle="Manga subtitle some text"
+			tools:title="Manga name" />
+
+		<com.google.android.material.tabs.TabLayout
+			android:id="@+id/tabs"
+			android:layout_width="match_parent"
+			android:layout_height="48dp"
+			app:layout_scrollFlags="enterAlways"
+			app:tabIndicatorColor="@android:color/white"
+			app:tabMode="fixed"/>
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<androidx.viewpager.widget.ViewPager
+		android:id="@+id/pager"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+	<fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+		android:id="@+id/progressBar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:indeterminate="true"
+		app:spb_color="?colorAccent"
+		app:spb_stroke_separator_length="4dp"
+		app:spb_interpolator="spb_interpolator_acceleratedecelerate"
+		app:spb_progressiveStart_activated="true"
+		app:spb_progressiveStart_speed="1.2"
+		app:spb_progressiveStop_speed="3.4"
+		app:spb_speed="1.7"
+		app:spb_sections_count="4"
+		app:layout_anchor="@id/pager"
+		app:layout_anchorGravity="bottom" />
+
+	<com.google.android.material.bottomappbar.BottomAppBar
+		android:id="@+id/bottomBar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:translationY="?attr/actionBarSize"
+		android:visibility="gone"
+		app:backgroundTint="?colorPrimary"
+		app:hideOnScroll="true"
+		app:layout_anchor="@id/pager"
+		app:layout_anchorGravity="bottom"
+		app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

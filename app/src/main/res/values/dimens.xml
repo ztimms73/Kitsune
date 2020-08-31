@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="padding8">8dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <dimen name="bottomsheet_peek_height">220dp</dimen>
+    <dimen name="progressbar_large">76dp</dimen>
+    <dimen name="column_width_medium">120dp</dimen>
+
+    <dimen name="thumb_width_list">128dp</dimen>
+    <dimen name="thumb_height_list">177dp</dimen>
+    <dimen name="thumb_width_small">86dp</dimen>
+    <dimen name="thumb_width_medium">118dp</dimen>
+    <dimen name="thumb_width_large">148dp</dimen>
+
+</resources>

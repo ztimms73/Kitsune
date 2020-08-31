@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lucasurbas.listitemview.ListItemView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:id="@+id/list"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	app:liv_displayMode="icon"
+	app:liv_multiline="true"
+	tools:liv_title="Two-line item"
+	tools:liv_icon="@drawable/ic_build_24dp"/>

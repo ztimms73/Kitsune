@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:foreground="?selectableItemBackground"
+	android:layout_height="wrap_content"
+	app:cardElevation="2dp">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<org.xtimms.kitsune.core.common.views.AspectRatioImageView
+			android:id="@+id/imageViewThumbnail"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:adjustViewBounds="true"
+			android:scaleType="centerCrop"/>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_alignTop="@+id/imageViewThumbnail"
+			android:layout_alignBottom="@+id/imageViewThumbnail"
+			android:layout_alignParentBottom="true"
+			android:background="@drawable/gradient" />
+
+		<TextView
+			android:id="@+id/textViewTitle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/imageViewThumbnail"
+			android:ellipsize="end"
+			android:lineSpacingExtra="-4dp"
+			android:maxLines="2"
+			android:padding="8dp"
+			android:shadowColor="@color/textColorPrimaryLight"
+			android:shadowDx="0"
+			android:shadowDy="0"
+			android:shadowRadius="4"
+			android:textStyle="bold"
+			style="@style/TextAppearance.Regular.Body1.Light"
+			tools:text="Sample text"/>
+
+	</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

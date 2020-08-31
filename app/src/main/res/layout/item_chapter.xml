@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:background="?selectableItemBackground">
+
+    <TextView
+        android:id="@+id/chapter_title"
+        style="@style/TextAppearance.Regular.Body1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintEnd_toStartOf="@+id/chapter_play"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/chapter_scanlator"
+        style="@style/TextAppearance.Regular.Caption.Hint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Scanlator"
+        android:maxLines="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chapter_title"
+        app:layout_constraintBottom_toTopOf="@+id/chapter_date"
+        app:layout_constraintEnd_toStartOf="@+id/chapter_play"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/chapter_date"
+        style="@style/TextAppearance.Regular.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="6dp"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="22/02/2016" />
+
+    <TextView
+        style="@style/TextAppearance.Regular.Caption.Hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Pages: 45" />
+
+    <ImageView
+        android:id="@+id/chapter_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/ic_play_green"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/download_text"
+        style="@style/TextAppearance.Regular.Caption.Hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="6dp"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/downloaded"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

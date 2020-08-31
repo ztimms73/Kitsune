@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".ui.tools.settings.SettingsHeadersActivity">
+
+	<com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+		android:layout_height="132dp"
+		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+		<com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="?colorPrimary"
+			app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+			<androidx.appcompat.widget.Toolbar
+				android:id="@+id/toolbar"
+				android:layout_width="match_parent"
+				android:layout_height="?attr/actionBarSize"
+				android:background="?colorPrimary"
+				android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+				app:layout_collapseMode="pin">
+
+				<TextView
+					android:id="@+id/textView_title"
+					style="@style/TextAppearance.AppCompat.Title"
+					android:layout_width="match_parent"
+					android:layout_height="?actionBarSize"
+					android:ellipsize="end"
+					android:gravity="center_vertical"
+					android:marqueeRepeatLimit="3"
+					android:maxLines="1"
+					android:text="@string/settings" />
+
+			</androidx.appcompat.widget.Toolbar>
+
+		</com.google.android.material.appbar.CollapsingToolbarLayout>
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/activity_vertical_margin"
+		android:layout_marginLeft="@dimen/activity_horizontal_margin"
+		android:layout_marginRight="@dimen/activity_horizontal_margin"
+		app:behavior_overlapTop="64dp"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin">
+
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/recyclerView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+
+	</androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

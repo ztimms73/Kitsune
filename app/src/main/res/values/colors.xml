@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_grey_900">#263238</color>
+
+    <color name="transparent_dark">#98000000</color>
+
+    <color name="white_overlay_85">#d9ffffff</color>
+    <color name="light_gray">#cccccc</color>
+    <color name="red_overlay">#92ff0000</color>
+    <color name="notification_chapters">#00bfa5</color>
+    <color name="main_background">#EEEEEE</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="colorSplash">#0065b3</color>
+    <color name="green_overlay">#4CAF50</color>
+    <color name="textColorPrimaryLight">@color/md_black_1000_87</color>
+    <color name="md_black_1000_87">#DE000000</color>
+    <color name="textColorPrimaryDark">@color/md_white_1000</color>
+    <color name="md_white_1000">#FFFFFFFF</color>
+    <color name="selectorColorDark">#80448AFF</color>
+    <color name="selectorColorLight">#612979FF</color>
+    <color name="backgroundDark">#ff303030</color>
+
+</resources>

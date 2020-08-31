@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<plurals name="chapters_saved">
+		<item quantity="zero">No chapters saved</item>
+		<item quantity="one">One chapter saved</item>
+		<item quantity="two">Two chapters saved</item>
+		<item quantity="few">%1$d chapters saved</item>
+		<item quantity="many">%1$d chapters saved</item>
+		<item quantity="other">%1$d chapters saved</item>
+	</plurals>
+
+	<plurals name="chapters_saved_count">
+		<item quantity="zero">-</item>
+		<item quantity="one">1</item>
+		<item quantity="two">2</item>
+		<item quantity="few">%1$d</item>
+		<item quantity="many">%1$d</item>
+		<item quantity="other">%1$d</item>
+	</plurals>
+
+	<plurals name="chapters_removed">
+		<item quantity="zero">No chapters has been removed</item>
+		<item quantity="one">One chapter has been removed</item>
+		<item quantity="two">Two chapters has been removed</item>
+		<item quantity="few">%1$d chapters has been removed</item>
+		<item quantity="many">%1$d chapters has been removed</item>
+		<item quantity="other">%1$d chapters has been removed</item>
+	</plurals>
+
+	<plurals name="chapters_new">
+		<item quantity="zero">No new chapters</item>
+		<item quantity="one">One new chapter</item>
+		<item quantity="two">Two new chapters</item>
+		<item quantity="few">%1$d new chapters</item>
+		<item quantity="many">%1$d new chapters</item>
+		<item quantity="other">%1$d new chapters</item>
+	</plurals>
+
+	<plurals name="files_count">
+		<item quantity="zero">Empty folder</item>
+		<item quantity="one">1 file</item>
+		<item quantity="two">2 files</item>
+		<item quantity="few">%1$d files</item>
+		<item quantity="many">%1$d files</item>
+		<item quantity="other">Files: %1$d</item>
+	</plurals>
+</resources>

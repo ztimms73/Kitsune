@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorCard"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="176dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?colorPrimary"
+                app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                app:expandedTitleMarginBottom="96dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?colorPrimary"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:layout_collapseMode="pin"/>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:padding="4dp"
+        android:clipToPadding="false"
+        app:behavior_overlapTop="72dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/progressbar_large"
+        android:layout_height="@dimen/progressbar_large"
+        android:indeterminate="true"
+        app:layout_anchor="@id/recyclerView"
+        app:layout_anchorGravity="center"
+        app:layout_behavior="@string/center_gravity_behavior"
+        style="@style/Widget.AppCompat.ProgressBar"/>
+
+    <TextView
+        android:id="@+id/textView_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_saved_manga"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_anchor="@id/recyclerView"
+        app:layout_anchorGravity="center"
+        app:layout_behavior="@string/center_gravity_behavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

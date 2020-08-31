@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".ui.search.SearchActivity">
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			android:fitsSystemWindows="true"
+			app:layout_scrollFlags="enterAlways"
+			app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<org.xtimms.kitsune.core.common.views.InfiniteRecyclerView
+		android:id="@+id/recyclerView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:scrollbars="vertical"
+		android:padding="4dp"
+		android:clipToPadding="false"
+		android:overScrollMode="never"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+	<TextView
+		android:id="@+id/textView_holder"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/no_manga_found"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:visibility="gone"
+		app:layout_anchor="@id/recyclerView"
+		app:layout_anchorGravity="center"
+		app:layout_behavior="@string/center_gravity_behavior" />
+
+	<ProgressBar
+		android:id="@+id/progressBar"
+		style="@style/Widget.AppCompat.ProgressBar"
+		android:layout_width="72dp"
+		android:layout_height="72dp"
+		android:indeterminate="true"
+		app:layout_anchor="@id/recyclerView"
+		app:layout_anchorGravity="center"
+		app:layout_behavior="@string/center_gravity_behavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="typeface" format="enum">
+        <enum name="ptsansNarrow" value="0"/>
+        <enum name="ptsansNarrowBold" value="1"/>
+    </attr>
+    <declare-styleable name="PTSansTextView">
+        <attr name="typeface"/>
+    </declare-styleable>
+    <declare-styleable name="SeekBarPreferenceAttrs">
+        <attr name="iconDrawable" format="reference" />
+        <attr name="max" format="integer" />
+        <attr name="summaryPattern" format="string" />
+    </declare-styleable>
+    <declare-styleable name="IntSelectPreferenceAttrs">
+        <attr name="minValue" format="integer" />
+        <attr name="maxValue" format="integer" />
+    </declare-styleable>
+    <attr name="colorTranslucent" format="color" />
+    <attr name="colorGray" format="color" />
+    <attr name="colorLine" format="color" />
+    <attr name="colorCircle" format="color" />
+    <attr name="colorPrimaryLight" format="color"/>
+    <attr name="colorSave" format="color"/>
+    <attr name="colorCard" format="color" />
+    <attr name="selectable_list_drawable" format="reference|integer" />
+    <attr name="iconColor" format="color" />
+    <attr name="toolbarPopupTheme" format="reference" />
+    <attr name="selectable_library_drawable" format="reference|integer"/>
+    <attr name="alphaBackground" format="color"/>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="?colorCard"
+	android:minHeight="?listPreferredItemHeightSmall"
+	android:orientation="horizontal"
+	android:paddingEnd="?android:listPreferredItemPaddingEnd"
+	android:paddingStart="?android:listPreferredItemPaddingStart">
+
+	<CheckBox
+		android:id="@android:id/checkbox"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:minHeight="42dp"
+		android:minWidth="42dp" />
+
+	<LinearLayout
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:layout_margin="4dp"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@android:id/text1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:lines="1"
+			android:singleLine="true"
+			android:textColor="?android:attr/textColorPrimary"
+			android:textSize="16sp"
+			tools:text="One line item" />
+
+		<TextView
+			android:id="@android:id/text2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="14sp"
+			tools:text="One line item" />
+
+	</LinearLayout>
+
+	<androidx.appcompat.widget.AppCompatImageView
+		android:id="@+id/imageView_reorder"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="?selectableItemBackgroundBorderless"
+		android:minHeight="42dp"
+		android:minWidth="42dp"
+		android:scaleType="center"
+		android:src="@drawable/ic_reorder_black"
+		app:tint="?android:attr/textColorSecondary"
+		app:tintMode="src_in" />
+
+</LinearLayout>

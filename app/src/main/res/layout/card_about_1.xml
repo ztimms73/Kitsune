@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="4dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/img_card_about_1"
+            android:layout_width="64dp"
+            android:layout_height="128dp"
+            android:background="?attr/colorLine"
+            android:scaleType="centerInside"
+            android:padding="8dp"
+            android:src="@mipmap/ic_launcher"
+            tools:ignore="ContentDescription" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/img_card_about_1">
+
+            <TextView
+                android:id="@+id/tv_card_about_1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hello"
+                android:textColor="?colorAccent"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_about_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_card_about_1_1"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="8dp"
+                android:textStyle="italic"
+                tools:text="App version: 1.1"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

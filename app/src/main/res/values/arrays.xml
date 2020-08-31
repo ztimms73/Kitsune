@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="intervals_hours">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>6</item>
+        <item>12</item>
+        <item>24</item>
+        <item>48</item>
+    </string-array>
+    <string-array name="intervals">
+        <item>@string/interval_1hour</item>
+        <item>@string/interval_2hours</item>
+        <item>@string/interval_3hours</item>
+        <item>@string/interval_6hours</item>
+        <item>@string/interval_12hours</item>
+        <item>@string/interval_once_day</item>
+        <item>@string/interval_two_days</item>
+    </string-array>
+    <string-array name="scale_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="scale_modes">
+        <item>@string/scale_fit</item>
+        <item>@string/scale_fit_w</item>
+        <item>@string/scale_fit_h</item>
+        <item>@string/scale_source</item>
+    </string-array>
+    <string-array name="themes">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+    </string-array>
+    <string-array name="themes_names">
+        <item>Default</item>
+        <item>Purple Corallite</item>
+        <item>Ambiance</item>
+        <item>Nephritis</item>
+        <item>Royal Blue</item>
+        <item>Sizzling Red</item>
+        <item>Jacksons Purple</item>
+        <item>Keppel</item>
+        <item>Pixelated Grass</item>
+        <item>Teal</item>
+        <item>Watermelon</item>
+        <item>Protoss Pylon</item>
+        <item>Bluebell</item>
+        <item>Very Berry</item>
+        <item>Jalapeno Red</item>
+        <item>Dupain</item>
+        <item>Photon</item>
+        <item>Tachiyomi</item>
+        <item>VK</item>
+        <item>Dark</item>
+        <item>Dark Miku</item>
+        <item>AMOLED</item>
+    </string-array>
+    <string-array name="r2_modes_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="network_types">
+		<item>@string/on_any_network</item>
+		<item>@string/only_when_wifi</item>
+	</string-array>
+	<string-array name="network_types_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="reader_modes">
+        <item>@string/direction_ltr</item>
+        <item>@string/direction_rtl</item>
+        <item>@string/direction_webtoon</item>
+    </string-array>
+    <string-array name="sync_intervals">
+        <item>@string/realtime</item>
+        <item>@string/interval_4hours</item>
+        <item>@string/interval_twice_day</item>
+        <item>@string/interval_once_day</item>
+        <item>@string/interval_two_days</item>
+        <item>@string/manually</item>
+    </string-array>
+    <string-array name="sync_intervals_hours">
+        <item>0</item>
+        <item>4</item>
+        <item>12</item>
+        <item>24</item>
+        <item>48</item>
+        <item>-1</item>
+    </string-array>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- tips actions -->
+	<item name="action_crash_report" type="id" />
+	<item name="action_wizard" type="id" />
+	<item name="action_discover" type="id" />
+	<item name="action_category" type="id" />z
+	<!-- chapter menu -->
+	<item name="action_chapter_save_this" type="id" />
+	<item name="action_chapter_save_prev" type="id" />
+	<item name="action_chapter_save_next" type="id" />
+	<item name="action_chapter_save_all" type="id" />
+	<item name="action_chapter_save_5" type="id" />
+	<item name="action_chapter_save_10" type="id" />
+	<item name="action_chapter_save_30" type="id" />
+	<item name="action_chapter_remove_this" type="id" />
+	<item name="action_chapter_remove_all" type="id" />
+	<!-- page menu -->
+	<item name="action_page_bookmark_add" type="id" />
+	<item name="action_page_bookmark_remove" type="id" />
+	<item name="action_page_save" type="id" />
+	<item name="action_page_share" type="id" />
+	<item name="action_open_browser" type="id" />
+	<item name="action_reader_mode" type="id" />
+	<item name="action_reader_settings" type="id" />
+</resources>

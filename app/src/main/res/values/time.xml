@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hour">
+        <item quantity="zero">%1$d часов</item>
+        <item quantity="one">%1$d час</item>
+        <item quantity="two">%1$d часа</item>
+        <item quantity="few">%1$d часа</item>
+        <item quantity="many">%1$d часов</item>
+        <item quantity="other">%1$d часов</item>
+    </plurals>
+    <plurals name="minute">
+        <item quantity="zero">%1$d минут</item>
+        <item quantity="one">%1$d минута</item>
+        <item quantity="two">%1$d минуты</item>
+        <item quantity="few">%1$d минуты</item>
+        <item quantity="many">%1$d минут</item>
+        <item quantity="other">%1$d минут</item>
+    </plurals>
+</resources>

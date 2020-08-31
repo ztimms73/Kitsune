@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:openDrawer="end">
+
+		<com.google.android.material.appbar.AppBarLayout
+			android:id="@+id/appbar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+			<androidx.appcompat.widget.Toolbar
+				android:id="@+id/toolbar"
+				android:layout_width="match_parent"
+				android:layout_height="?attr/actionBarSize"
+				android:background="?colorPrimary"
+				android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+				app:layout_collapseMode="pin"/>
+
+		</com.google.android.material.appbar.AppBarLayout>
+
+		<org.xtimms.kitsune.core.common.views.InfiniteRecyclerView
+			android:id="@+id/recyclerView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="4dp"
+			android:clipToPadding="false"
+			app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+		<ProgressBar
+			android:id="@+id/progressBar"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:indeterminate="true"
+			app:layout_anchor="@id/recyclerView"
+			app:layout_anchorGravity="center"
+			app:layout_behavior="@string/center_gravity_behavior"
+			style="?android:progressBarStyleLarge"/>
+
+		<ViewStub
+			android:id="@+id/stub_error"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:layout_anchor="@id/recyclerView"
+			app:layout_behavior="@string/center_gravity_behavior"
+			app:layout_anchorGravity="center"
+			android:layout="@layout/view_error" />
+
+		<com.google.android.material.floatingactionbutton.FloatingActionButton
+			android:id="@+id/fabFilter"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="16dp"
+			app:layout_anchor="@id/recyclerView"
+			app:layout_anchorGravity="bottom|end"
+			app:fabSize="normal"
+			android:src="@drawable/ic_filter_list_white"
+			app:layout_behavior="@string/scroll_aware_behavior"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
