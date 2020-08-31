@@ -15,7 +15,7 @@
 			android:icon="@drawable/ic_tools_black" />
 	</group>
 
-	<group android:checkableBehavior="none" >
+	<group android:id="@+id/group" android:checkableBehavior="none" >
 		<item
 			android:id="@+id/nav_action_settings"
 			android:icon="@drawable/ic_nav_settings"
