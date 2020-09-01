@@ -8,9 +8,6 @@ import android.content.res.Resources;
 import android.preference.PreferenceManager;
 import androidx.annotation.NonNull;
 
-import com.yandex.metrica.YandexMetrica;
-import com.yandex.metrica.YandexMetricaConfig;
-
 import org.xtimms.kitsune.core.common.CrashHandler;
 import org.xtimms.kitsune.core.common.ThumbSize;
 import org.xtimms.kitsune.core.updchecker.JobSetupReceiver;
@@ -26,14 +23,6 @@ public final class KitsuneApp extends Application {
 	@Override
 	public void onCreate() {
 		super.onCreate();
-		// Creating an extended library configuration.
-		String API_key = "82f8508e-e77e-4615-a461-76a9515ae2ad";
-		YandexMetricaConfig config = YandexMetricaConfig.newConfigBuilder(API_key).build();
-		// Initializing the AppMetrica SDK.
-		YandexMetrica.activate(getApplicationContext(), config);
-		// Automatic tracking of user activity.
-		YandexMetrica.enableActivityAutoTracking(this);
-
 		Resources resources = getResources();
 		final float aspectRatio = 18f / 13f;
 		ThumbSize.THUMB_SIZE_LIST = new ThumbSize(
