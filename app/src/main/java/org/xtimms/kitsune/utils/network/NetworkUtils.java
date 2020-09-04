@@ -58,7 +58,7 @@ public class NetworkUtils {
 	public static final String TAG_RESPONSE = TAG + "-response";
 	public static final String TAG_ERROR = TAG + "-error";
 
-	public static final String USER_AGENT_DEFAULT = "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:65.0) Gecko/20100101 Firefox/65.0";
+	public static final String USER_AGENT_DEFAULT = "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0";
 
 	private static final CacheControl CACHE_CONTROL_DEFAULT = new CacheControl.Builder().maxAge(10, TimeUnit.MINUTES).build();
 	public static final Headers HEADERS_DEFAULT = new Headers.Builder()
