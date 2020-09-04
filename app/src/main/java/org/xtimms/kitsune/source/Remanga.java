@@ -243,6 +243,12 @@ public final class Remanga extends MangaProvider {
         return mGenres;
     }
 
+    @NonNull
+    @Override
+    public String getImageUrl(@NonNull MangaPage page) throws Exception {
+        return page.url;
+    }
+
     @Override
     public String getPageImage(MangaPage mangaPage) {
         return mangaPage.url;
