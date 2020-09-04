@@ -118,7 +118,7 @@
 				app:liv_displayMode="icon"
 				app:liv_multiline="true"
 				app:liv_icon="@drawable/ic_info_24dp"
-				app:liv_title="Описание"
+				app:liv_title="@string/description"
 				app:liv_subtitle="@string/loading"/>
 
 			<ImageView

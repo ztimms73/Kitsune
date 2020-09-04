@@ -9,9 +9,10 @@ import androidx.viewpager.widget.ViewPager;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
+import org.xtimms.kitsune.core.common.views.EnableDisableViewPager;
 import org.xtimms.kitsune.ui.reader.OnOverScrollListener;
 
-public class OverScrollPager extends ViewPager {
+public class OverScrollPager extends EnableDisableViewPager {
 
 	private static final float SWIPE_TOLERANCE = .25f;
 
